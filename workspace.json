@@ -1,0 +1,12 @@
+{
+  "superPasos": [
+    {
+      "js": ["index.j", "home.js"],
+      "src": [],
+      "style": ["style.css"],
+      "views": [],
+      "index": "index.html",
+      "home": "home.html"
+    }
+  ]
+}
