@@ -33,6 +33,10 @@ nav {
     text-align: center;
 }
 
+#logo:hover{
+    cursor: pointer;
+}
+
 #sesion {
     color: #000;
     font-size: 1.7rem;
@@ -43,6 +47,10 @@ nav {
     background-color: #CFBEB5;
     border: transparent;
     border-radius: 18px;
+}
+
+#sesion p:hover{
+    cursor: pointer;
 }
 
 /* Ícono de menú hamburguesa */
@@ -108,6 +116,10 @@ footer {
     background-color: #846B5D;
 }
 
+footer img:hover{
+    cursor: pointer;
+}
+
 #alinearfoot {
     display: flex;
     align-items: center;
@@ -126,6 +138,12 @@ img.redondearImg{
     align-items: center;
     p{
         margin: 0rem 0;
+    }
+    p:hover{
+        cursor: pointer;
+    }
+    h3:hover{
+        cursor: pointer;
     }
 }
 
@@ -149,5 +167,8 @@ img.redondearImg{
     }
     iframe{
         margin-top: .5rem;
+    }
+    h3:hover{
+        cursor: pointer;
     }
 }
