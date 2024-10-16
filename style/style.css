@@ -113,3 +113,8 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
+
+img.redondearImg{
+    padding: 5px;
+    margin-top: .5rem;
+}
