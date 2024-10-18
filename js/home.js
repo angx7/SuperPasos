@@ -16,7 +16,7 @@ function confirmarCerrarSesion() {
   }).then((result) => {
     if (result.isConfirmed) {
       // Lógica para cerrar sesión
-      window.location.href = "ruta/a/cerrar/sesion";
+      window.location.href = "index.html";
     }
   });
 }
