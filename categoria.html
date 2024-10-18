@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Angel Becerra, Grecia Navarrete, Christian Moreno, Ximena Gutiérrez"
+    />
+    <meta name="date" , content="2024-10-17" />
+    <title> Home </title>
+    <link
+      rel="shortcut icon"
+      href="src/icons/SuperPasosIcon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="style/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/styleCategoria.css" />
+    <!-- SweetAlert2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="iniciar">
+          <div id="logo">
+            <h2>SuperPasos</h2>
+          </div>
+          <div id="sesion">
+            <p class="d-none d-md-block" onclick="confirmarCerrarSesion()">
+              Cerrar Sesión
+            </p>
+          </div>
+        </div>
+        <div id="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div id="centrarElementos">
+          <div id="elementos">
+            <div id="menu-links">
+              <a href="#">Inicio</a>
+              <a href="#">Tendencias</a>
+              <a href="#">Novedades</a>
+              <!-- Modificamos este enlace para redirigir a catalogoView.html -->
+              <a href="catalogoView.html">Catálogo</a>
+              <a href="#">Contacto</a>
+              <a class="d-block d-md-none small">Cerrar Sesión</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <main>
+        <div class="container mt-5">
+            <!-- Título centrado -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1>Señora</h1>
+                </div>
+            </div>
+    
+            <div class="row mt-4">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="text-box">
+                        <p>
+                            Zapatos de señora suelen ser elegantes y cómodos, disponibles en diversos estilos como tacones,
+                            flats, sandalias o botas, con materiales que van desde cuero hasta tela.
+                            Diseñados para combinar moda y funcionalidad, varían en altura, detalles decorativos y colores
+                            según la ocasión.
+                        </p>
+                        <div class="text-center mt-4">
+                            <button class="btn custom-btn">Ver catálogo completo</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Opción de agregar imagen -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img alt="modelo más vendido" src="https://img.kwcdn.com/product/fancy/af6590dc-ed11-4cc4-8bce-7034599ebb87.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" width="300" height="250">
+                </div>
+            </div>
+    
+            <!-- Joven -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h1>Joven</h1>
+                </div>
+            </div>
+    
+            <div class="row mt-4">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="text-box">
+                        <p>
+                            Los zapatos de joven para mujer son versátiles y estilosos, abarcando desde zapatillas deportivas 
+                            y botines hasta sandalias y tacones bajos. Suelen estar hechos de materiales ligeros y cómodos,
+                            con diseños que reflejan tendencias modernas y colores vibrantes, 
+                            ideales para el día a día y ocasiones informales.
+                        </p>
+                        <div class="text-center mt-4">
+                            <button class="btn custom-btn">Ver catálogo completo</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img alt="modelo más vendido" src="https://img.ltwebstatic.com/images3_pi/2024/03/18/76/1710739461cadbc6bb6e8845141320e93747d2363a_thumbnail_405x552.jpg" width="300" height="250">
+                </div>
+            </div>
+    
+            <!-- Escolar -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h1>Escolar</h1>
+                </div>
+            </div>
+    
+            <div class="row mt-4">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="text-box">
+                        <p>
+                            Los zapatos escolares son prácticos y cómodos, diseñados para el uso diario en el entorno académico. 
+                            Suelen ser de cuero o materiales sintéticos, con suelas antideslizantes y diseños sencillos,
+                            como mocasines o zapatos cerrados, en colores neutros que cumplen con los códigos de vestimenta escolar.
+                        </p>
+                        <div class="text-center mt-4">
+                            <button class="btn custom-btn">Ver catálogo completo</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img alt="modelo más vendido" src="https://www.pequenahuella.com/modules/ph_simpleblog/covers/208.jpg" width="300" height="250">
+                </div>
+            </div>
+    
+            <!-- Casual -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h1>Casual</h1>
+                </div>
+            </div>
+    
+            <div class="row mt-4">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="text-box">
+                        <p>
+                            Los zapatos casuales son informales y cómodos, perfectos para el uso diario.
+                            Pueden incluir zapatillas, flats o botines, hechos de materiales como tela, 
+                            cuero o sintéticos, y suelen presentar una variedad de colores y estilos para complementar diferentes outfits, desde jeans hasta vestidos. 
+                        </p>
+                        <div class="text-center mt-4">
+                            <button class="btn custom-btn">Ver catálogo completo</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img alt="Zapatos casual" src="https://mundowomanshop.com/cdn/shop/products/5_71ee4cbe-10d3-4364-9e39-64f7b1b1893e.jpg?v=1666971103" width="300" height="250">
+                </div>
+            </div>
+    
+            <!-- Enfermera -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h1>Enfermera</h1>
+                </div>
+            </div>
+    
+            <div class="row mt-4">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="text-box">
+                        <p>
+                            Los zapatos de enfermera están diseñados para ofrecer comodidad y soporte durante largas jornadas de trabajo.
+                            Suelen ser de materiales fáciles de limpiar, con suelas antideslizantes y diseños cerrados para mayor seguridad. 
+                            Además, suelen incluir características como plantillas acolchadas y buena ventilación para un uso prolongado.
+                        </p>
+                        <div class="text-center mt-4">
+                            <button class="btn custom-btn">Ver catálogo completo</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img alt="modelo más vendido" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSabZ-CQFo7UpRgmWu_1reGdCjLCajlcvXLDw&s" width="300" height="250">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+
+
+    <footer>
+      <div
+        id="alinearfoot"
+        class="d-flex flex-column flex-md-row justify-content-around"
+      >
+        <div class="col-md-4">
+          <div id="logo"><h2>SuperPasos</h2></div>
+          <div class="d-flex justify-content-center">
+            <img
+              src="src/svg/facebook-o-svgrepo-com.svg"
+              alt="F"
+              class="redondearImg"
+            />
+            <img
+              src="src/svg/instagram-167-svgrepo-com.svg"
+              alt="I"
+              class="redondearImg"
+            />
+            <img
+              src="src/svg/icons8-twitterx.svg"
+              alt="T"
+              class="redondearImg"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="catalogo">
+            <h3>Catalogo</h3>
+            <p>Señora</p>
+            <p>Joven</p>
+            <p>Escolar</p>
+            <p>Casual</p>
+            <p>Enfermera</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Numero telefonico</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.001485177845!2d-101.71388812427813!3d21.152339183521637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bc06e4e1d5a79%3A0x40248ea06dc675dc!2sUniversidad%20La%20Salle%20Baj%C3%ADo%20Campus%20Campestre!5e0!3m2!1ses-419!2smx!4v1729055158081!5m2!1ses-419!2smx"
+              width="170rem"
+              height="90rem"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="derechos">Derechos reservados &copy; 2024</div>
+    </footer>
+
+    <script src="style/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    
+  </body>
+</html>
