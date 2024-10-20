@@ -21,9 +21,21 @@ function confirmarCerrarSesion() {
   });
 }
 
+let contenedorPrincipal = document.getElementById("contenedorPrincipal");
+
 function cargarCatalogo() {
-  let contenedorPrincipal = document.getElementById("contenedorPrincipal");
   fetch("../views/catalogoView.html")
+    .then(function (contenido_html) {
+      return contenido_html.text();
+    })
+    .then(function (html) {
+      console.log(html);
+      contenedorPrincipal.innerHTML = html;
+    });
+}
+
+function cargarNovedades() {
+  fetch("../views/novedadesView.html")
     .then(function (contenido_html) {
       return contenido_html.text();
     })
