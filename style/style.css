@@ -172,3 +172,24 @@ img.redondearImg{
         cursor: pointer;
     }
 }
+
+.migasPan{
+    margin-left: 3.5rem;
+    padding: 0;
+    color: #848081;
+    a{
+        text-decoration: none;
+        color: #848081;
+    }
+    a.nivelA{
+        color: #5B5859 !important;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    @media (max-width: 768px) {
+        .migasPan {
+          font-size: 0.875rem;
+        }
+      }
+}

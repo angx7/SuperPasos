@@ -8,7 +8,7 @@
       content="Angel Becerra, Grecia Navarrete, Christian Moreno, Ximena Gutiérrez"
     />
     <meta name="date" , content="2024-10-17" />
-    <title> Home </title>
+    <title>Home</title>
     <link
       rel="shortcut icon"
       href="src/icons/SuperPasosIcon.ico"
@@ -19,6 +19,7 @@
       href="style/bootstrap-5.3.3-dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/styleCategoria.css" />
     <!-- SweetAlert2 CSS -->
     <link
       rel="stylesheet"
@@ -48,7 +49,7 @@
               <a href="#">Tendencias</a>
               <a href="#">Novedades</a>
               <!-- Modificamos este enlace para redirigir a catalogoView.html -->
-              <a href="catalogoView.html">Catálogo</a>
+              <a href="#" onclick="cargarCatalogo();">Catálogo</a>
               <a href="#">Contacto</a>
               <a class="d-block d-md-none small">Cerrar Sesión</a>
             </div>
@@ -58,7 +59,7 @@
     </header>
 
     <main>
-      <p>hola</p>
+      <div id="contenedorPrincipal"></div>
     </main>
 
     <footer>
