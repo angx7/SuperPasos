@@ -1,4 +1,5 @@
 div.catalogoView{
+    flex: 1;
     .text-box {
         background-color: #d4bebe; /* Fondo de color */
         padding: 20px; /* Espacio interior */
