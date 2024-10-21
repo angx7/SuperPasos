@@ -1,4 +1,4 @@
-#Integrantes 
+## Integrantes 
 
 Becerra Rojas Angel Alejandro 
 Gutierréz Pérez Ximena 
