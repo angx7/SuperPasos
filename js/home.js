@@ -72,3 +72,15 @@ function cargarSenora() {
       contenedorPrincipal.innerHTML = html;
     });
 }
+
+function cargarInicio() {
+  fetch("../views/inicioView.html")
+    .then(function (contenido_html) {
+      return contenido_html.text();
+    })
+    .then(function (html) {
+      contenedorPrincipal.innerHTML = html;
+    });
+}
+
+cargarInicio();

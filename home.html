@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="style/styleTendencias.css" />
     <link rel="stylesheet" href="style/styleContacto.css" />
     <link rel="stylesheet" href="style/styleSenora.css" />
+    <link rel="stylesheet" href="style/styleInicio.css" />
 
     <!-- SweetAlert2 CSS -->
     <link
@@ -50,7 +51,7 @@
         <div id="centrarElementos">
           <div id="elementos">
             <div id="menu-links">
-              <a href="#">Inicio</a>
+              <a href="#" onclick="cargarInicio();">Inicio</a>
               <a href="#" onclick="cargarTendencias();">Tendencias</a>
               <a href="#" onclick="cargarNovedades();">Novedades</a>
               <!-- Modificamos este enlace para redirigir a catalogoView.html -->
@@ -122,6 +123,6 @@
     </footer>
 
     <script src="style/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
-    <script src="js/home.js"></script>
+    <script src="js/home.js" defer></script>
   </body>
 </html>

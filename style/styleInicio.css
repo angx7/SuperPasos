@@ -15,6 +15,7 @@
         height: 40rem;
         position: sticky;
         top: 0;
+        border-radius: 5px;
     }
     button.btn{
         background-color: #CFBEB5;
