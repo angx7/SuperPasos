@@ -55,3 +55,14 @@ function cargarTendencias() {
       contenedorPrincipal.innerHTML = html;
     });
 }
+
+function cargarContacto() {
+  fetch("../views/contactoView.html")
+    .then(function (contenido_html) {
+      return contenido_html.text();
+    })
+    .then(function (html) {
+      console.log(html);
+      contenedorPrincipal.innerHTML = html;
+    });
+}
