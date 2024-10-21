@@ -83,4 +83,44 @@ function cargarInicio() {
     });
 }
 
+function cargarJoven() {
+  fetch("../views/jovenView.html")
+    .then(function (contenido_html) {
+      return contenido_html.text();
+    })
+    .then(function (html) {
+      contenedorPrincipal.innerHTML = html;
+    });
+}
+
+function cargarEscolar() {
+  fetch("../views/escolarView.html")
+    .then(function (contenido_html) {
+      return contenido_html.text();
+    })
+    .then(function (html) {
+      contenedorPrincipal.innerHTML = html;
+    });
+}
+
+function cargarEnfermera() {
+  fetch("../views/enfermeraView.html")
+    .then(function (contenido_html) {
+      return contenido_html.text();
+    })
+    .then(function (html) {
+      contenedorPrincipal.innerHTML = html;
+    });
+}
+
+function cargarCasual() {
+  fetch("../views/casualView.html")
+    .then(function (contenido_html) {
+      return contenido_html.text();
+    })
+    .then(function (html) {
+      contenedorPrincipal.innerHTML = html;
+    });
+}
+
 cargarInicio();

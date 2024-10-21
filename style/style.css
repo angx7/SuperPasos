@@ -191,6 +191,7 @@ img.redondearImg{
     }
     a.nivelA{
         color: #5B5859 !important;
+        text-decoration: underline;
     }
     a:hover {
         text-decoration: underline;
@@ -200,4 +201,8 @@ img.redondearImg{
           font-size: 0.875rem;
         }
       }
+}
+
+.tel:hover{
+    cursor: pointer;
 }
