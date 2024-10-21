@@ -1,35 +1,36 @@
-div.catalogoView{
-    .text-box {
-        background-color: #d4bebe; /* Fondo de color */
-        padding: 20px; /* Espacio interior */
-        border-radius: 10px; /* Bordes redondeados */
-        border: 1px solid white; /* Borde */
-        width: 100%; /* Asegura que ocupe todo el ancho disponible */
-        display: flex; /* Para alinear el contenido */
-        flex-direction: column; /* Permite que el texto y el botón se alineen verticalmente */
-        justify-content: space-between; /* Espacio entre el texto y el botón */
-        height: 250px; /* Fijo para que todos los recuadros tengan la misma altura */
-    }
+.senoraView{
+    flex: 1;
+        .text-box {
+            background-color: #d4bebe; /* Fondo de color */
+            padding: 20px; /* Espacio interior */
+            border-radius: 10px; /* Bordes redondeados */
+            border: 1px solid white; /* Borde */
+            width: 100%; /* Asegura que ocupe todo el ancho disponible */
+            display: flex; /* Para alinear el contenido */
+            flex-direction: column; /* Permite que el texto y el botón se alineen verticalmente */
+            justify-content: space-between; /* Espacio entre el texto y el botón */
+            height: 250px; /* Fijo para que todos los recuadros tengan la misma altura */
+        }
 
-    .text-box p {
-        text-align: justify; /* Justifica el texto */
-        margin: 0; /* Elimina márgenes internos */
-        font-size: 16px; /* Tamaño de fuente ajustado */
-        line-height: 1.6; /* Altura de línea para mejor legibilidad */
-        flex-grow: 1; /* Permite que el párrafo tome el espacio disponible */
-    }
+        .text-box p {
+            text-align: justify; /* Justifica el texto */
+            margin: 0; /* Elimina márgenes internos */
+            font-size: 16px; /* Tamaño de fuente ajustado */
+            line-height: 1.6; /* Altura de línea para mejor legibilidad */
+            flex-grow: 1; /* Permite que el párrafo tome el espacio disponible */
+        }
 
-    button.custom-btn {
-        padding: 10px 20px;
-        font-size: 16px;
-        border-radius: 5px;
-        background-color: #ededf6; /* Color de fondo por defecto */
-        color: rgb(30, 28, 28); /* Color del texto */
-        border: none; /* Sin borde */
-        cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    }
+        button.custom-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: #ededf6; /* Color de fondo por defecto */
+            color: rgb(30, 28, 28); /* Color del texto */
+            border: none; /* Sin borde */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+        }
 
-    button.custom-btn:hover {
-        background-color: rgba(101, 85, 73, 0.701); /* Color al pasar el mouse (más oscuro) */
-    }
+        button.custom-btn:hover {
+            background-color: rgba(101, 85, 73, 0.701); /* Color al pasar el mouse (más oscuro) */
+        }
 }

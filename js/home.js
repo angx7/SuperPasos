@@ -29,7 +29,6 @@ function cargarCatalogo() {
       return contenido_html.text();
     })
     .then(function (html) {
-      console.log(html);
       contenedorPrincipal.innerHTML = html;
     });
 }
@@ -40,7 +39,6 @@ function cargarNovedades() {
       return contenido_html.text();
     })
     .then(function (html) {
-      console.log(html);
       contenedorPrincipal.innerHTML = html;
     });
 }
@@ -51,7 +49,6 @@ function cargarTendencias() {
       return contenido_html.text();
     })
     .then(function (html) {
-      console.log(html);
       contenedorPrincipal.innerHTML = html;
     });
 }
@@ -62,7 +59,16 @@ function cargarContacto() {
       return contenido_html.text();
     })
     .then(function (html) {
-      console.log(html);
+      contenedorPrincipal.innerHTML = html;
+    });
+}
+
+function cargarSenora() {
+  fetch("../views/senoraView.html")
+    .then(function (contenido_html) {
+      return contenido_html.text();
+    })
+    .then(function (html) {
       contenedorPrincipal.innerHTML = html;
     });
 }
