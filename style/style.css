@@ -9,8 +9,15 @@ body {
 main{
     padding: 1rem;
     background-color: #ffff;
+    display: flex;
     flex: 1;
-    justify-content: center;
+}
+
+#contenedorPrincipal{
+    display: flex;
+    flex: 1;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -175,7 +182,7 @@ img.redondearImg{
 }
 
 .migasPan{
-    margin-left: 3.5rem;
+    margin-left: 3rem;
     padding: 0;
     color: #848081;
     a{

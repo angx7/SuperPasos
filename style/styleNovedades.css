@@ -1,9 +1,7 @@
 .novedadesView{
-  .novedadesView {
     flex: 1; /* Permite que el .novedadesView ocupe el espacio disponible */
     display: flex;
     flex-direction: column;
-  }
   
   .container {
     flex: 1; /* Permite que el .container ocupe el espacio disponible */

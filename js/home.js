@@ -44,3 +44,14 @@ function cargarNovedades() {
       contenedorPrincipal.innerHTML = html;
     });
 }
+
+function cargarTendencias() {
+  fetch("../views/tendenciasView.html")
+    .then(function (contenido_html) {
+      return contenido_html.text();
+    })
+    .then(function (html) {
+      console.log(html);
+      contenedorPrincipal.innerHTML = html;
+    });
+}
