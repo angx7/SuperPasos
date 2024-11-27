@@ -7,6 +7,11 @@
         justify-content: center;
     }
 
+    div a{
+        text-decoration: none !important;
+        color: black;
+    }
+
     .fondo{
         background-color: #D9D9D9;
         border-radius: 5px;

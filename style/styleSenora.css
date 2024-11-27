@@ -9,7 +9,6 @@
             display: flex; /* Para alinear el contenido */
             flex-direction: column; /* Permite que el texto y el botón se alineen verticalmente */
             justify-content: space-between; /* Espacio entre el texto y el botón */
-            height: 250px; /* Fijo para que todos los recuadros tengan la misma altura */
         }
 
         .text-box p {
