@@ -14,6 +14,14 @@
       href="src/icons/SuperPasosIcon.ico"
       type="image/x-icon"
     />
+
+    <!-- SweetAlert2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
+    />
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="style/index.css" />
   </head>
   <body>
@@ -26,11 +34,23 @@
         <div class="contenedor">
           <div class="usuario">
             <p>Usuario:</p>
-            <input type="text" name="usuario" id="usuario" />
+            <input
+              type="text"
+              name="usuario"
+              id="usuario"
+              title="Ingrese su usuario"
+              placeholder="Usuario"
+            />
           </div>
           <div class="contraseña">
             <p>Contraseña:</p>
-            <input type="password" name="contraseña" id="contraseña" />
+            <input
+              type="password"
+              name="contraseña"
+              id="contraseña"
+              title="Ingrese su contraseña"
+              placeholder="Contraseña"
+            />
           </div>
           <div class="boton">
             <button type="button" onclick="verificar();">
@@ -38,7 +58,7 @@
             </button>
           </div>
           <div class="recuperar">
-            <a href="">¿Olvidaste tu contraseña?</a>
+            <a id="forgotPassword">¿Olvidaste tu contraseña?</a>
           </div>
         </div>
       </div>
