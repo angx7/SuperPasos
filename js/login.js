@@ -1,9 +1,7 @@
 // alert("I always come back");
-
+const URL = "http://localhost:3000/users";
 const usuario = "";
 const contraseña = "";
-
-const usuarios = [{ usuario: "admin", contraseña: "password" }];
 
 function verificar() {
   const usuario = document.getElementById("usuario").value;
@@ -19,36 +17,52 @@ function verificar() {
     });
     return;
   }
-
-  const usuarioEncontrado = usuarios.find(
-    (u) => u.usuario === usuario && u.contraseña === contraseña
-  );
-
-  if (usuarioEncontrado) {
-    // alert("Bienvenido");
-    Swal.fire({
-      position: "center",
-      icon: "success",
-      title: "Bienvenido",
-      showConfirmButton: true,
-    }).then(() => {
-      window.location.href = "home.html";
+  fetch(URL + "/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ email: usuario, password: contraseña }),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Success:", data);
+      if (data.message === "Inicio de sesión exitoso") {
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Bienvenido",
+          showConfirmButton: false,
+          timer: 1500,
+        }).then(() => {
+          window.location.href = "home.html";
+        });
+      } else {
+        Swal.fire({
+          position: "center",
+          icon: "error",
+          title: "Datos incorrectos",
+          text: "Contacta con el proveedor",
+          showConfirmButton: false,
+          timer: 2500,
+        });
+        document.getElementById("usuario").value = "";
+        document.getElementById("contraseña").value = "";
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      Swal.fire({
+        position: "center",
+        icon: "error",
+        title: "Error de conexión",
+        text: "No se pudo conectar con el servidor",
+        showConfirmButton: false,
+        timer: 2500,
+      });
     });
-    // window.location.href = "home.html";
-  } else {
-    // alert("Datos incorrectos contacta con el proveedor");
-    Swal.fire({
-      position: "center",
-      icon: "error",
-      title: "Datos incorrectos",
-      text: "Contacta con el proveedor",
-      showConfirmButton: false,
-      timer: 2500,
-    });
-    document.getElementById("usuario").value = "";
-    document.getElementById("contraseña").value = "";
-  }
 }
+
 async function forgotPassword() {
   await Swal.fire({
     icon: "info",

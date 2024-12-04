@@ -22,6 +22,7 @@ function confirmarCerrarSesion() {
 }
 
 let contenedorPrincipal = document.getElementById("contenedorPrincipal");
+let tendencias;
 
 function cargarCatalogo() {
   fetch("../views/catalogoView.html")
@@ -50,6 +51,12 @@ function cargarTendencias() {
     })
     .then(function (html) {
       contenedorPrincipal.innerHTML = html;
+      import("./tendencias.js").then(function (controller) {
+        tendencias = controller;
+        // if (typeof tendencias === "function") {
+        //   tendencias();
+        // }
+      });
     });
 }
 
