@@ -22,7 +22,6 @@ function confirmarCerrarSesion() {
 }
 
 let contenedorPrincipal = document.getElementById("contenedorPrincipal");
-let moduloTendencias;
 
 function cargarCatalogo() {
   fetch("../views/catalogoView.html")
@@ -31,6 +30,11 @@ function cargarCatalogo() {
     })
     .then(function (html) {
       contenedorPrincipal.innerHTML = html;
+      import("./catalogo.js").then(function (controller) {
+        if (typeof controller.catalogo === "function") {
+          controller.catalogo(); // Llama a la función catalogo() después de que el módulo se haya importado
+        }
+      });
     });
 }
 
@@ -41,6 +45,11 @@ function cargarNovedades() {
     })
     .then(function (html) {
       contenedorPrincipal.innerHTML = html;
+      import("./novedades.js").then(function (controller) {
+        if (typeof controller.novedades === "function") {
+          controller.novedades(); // Llama a la función novedades() después de que el módulo se haya importado
+        }
+      });
     });
 }
 
@@ -76,6 +85,11 @@ function cargarSenora() {
     })
     .then(function (html) {
       contenedorPrincipal.innerHTML = html;
+      import("./senoraCatalogo.js").then(function (controller) {
+        if (typeof controller.senora === "function") {
+          controller.senora(); // Llama a la función senora() después de que el módulo se haya importado
+        }
+      });
     });
 }
 
@@ -96,6 +110,11 @@ function cargarJoven() {
     })
     .then(function (html) {
       contenedorPrincipal.innerHTML = html;
+      import("./jovenCatalogo.js").then(function (controller) {
+        if (typeof controller.joven === "function") {
+          controller.joven(); // Llama a la función joven() después de que el módulo se haya importado
+        }
+      });
     });
 }
 
@@ -106,6 +125,11 @@ function cargarEscolar() {
     })
     .then(function (html) {
       contenedorPrincipal.innerHTML = html;
+      import("./escolarCatalogo.js").then(function (controller) {
+        if (typeof controller.escolar === "function") {
+          controller.escolar(); // Llama a la función escolar() después de que el módulo se haya importado
+        }
+      });
     });
 }
 
@@ -116,6 +140,11 @@ function cargarEnfermera() {
     })
     .then(function (html) {
       contenedorPrincipal.innerHTML = html;
+      import("./enfermeraCatalogo.js").then(function (controller) {
+        if (typeof controller.enfermera === "function") {
+          controller.enfermera(); // Llama a la función enfermera() después de que el módulo se haya importado
+        }
+      });
     });
 }
 
@@ -126,6 +155,11 @@ function cargarCasual() {
     })
     .then(function (html) {
       contenedorPrincipal.innerHTML = html;
+      import("./casualCatalogo.js").then(function (controller) {
+        if (typeof controller.casual === "function") {
+          controller.casual(); // Llama a la función casual() después de que el módulo se haya importado
+        }
+      });
     });
 }
 
