@@ -22,7 +22,7 @@ function confirmarCerrarSesion() {
 }
 
 let contenedorPrincipal = document.getElementById("contenedorPrincipal");
-let tendencias;
+let moduloTendencias;
 
 function cargarCatalogo() {
   fetch("../views/catalogoView.html")
@@ -52,10 +52,9 @@ function cargarTendencias() {
     .then(function (html) {
       contenedorPrincipal.innerHTML = html;
       import("./tendencias.js").then(function (controller) {
-        tendencias = controller;
-        // if (typeof tendencias === "function") {
-        //   tendencias();
-        // }
+        if (typeof controller.tendecias === "function") {
+          controller.tendecias(); // Llama a la función tendecias() después de que el módulo se haya importado
+        }
       });
     });
 }

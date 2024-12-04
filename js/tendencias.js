@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("tendencias.js cargado");
-  tendecias();
 });
 export async function tendecias() {
   try {
